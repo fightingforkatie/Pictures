@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fighting For Katie</title>
+    <meta name="author" content="BradDavis">
+    <meta name="description" content="Fighting for Katie is an organization that is dedicated to beating cancer and to supporting research into finding a cure. This site is dedicated to Katie Shepherd and her inspiring fight to beat cancer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF9FE2">
+    <meta name="msapplication-navbutton-color" content="#FF9FE2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FF9FE2">
+    <style name="AppTheme" parent="AppBaseTheme">
+	    <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+    		<item name="android:background">#FF9FE2</item>
+    		<item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.StatusBar.Title">
+    		<item name="android:textColor">#000000</item>
+    </style>
+
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      @media screen and (max-width: 1100px){
+        .titleHeader{
+          position: relative;
+          top: 0vw;
+          width: 100vw;
+          height: 9vw;
+          background-color: #FF9FE2;
+          z-index: 10;
+        }
+        #donate{
+          position: relative;
+          width: 14vw;
+          margin-top: 1vw;
+          margin-left: 0vw;
+          z-index: 15;
+        }
+        #title{
+          position: absolute;
+          top: 0vw;
+          width: 100vw;
+          text-align: center;
+          color: white;
+          line-height: 1;
+          font-weight: bolder;
+          font-size:8vw;
+          z-index: 2;
+        }
+        .menu{
+          position:sticky;
+          top: -.25vw;
+          width: 100vw;
+          height: 6vw;
+          text-align: center;
+          background-color: #FF9FE2;
+          z-index: 10;
+        }
+        #menu{
+          position: sticky;
+          background-color: #FF9FE2;
+          color: white;
+          top: -.025vw;
+          font-size: 3vw;
+          font-weight: bold;
+          padding-left: 3vw;
+          padding-right: 3vw;
+          text-decoration: none;
+        }
+        #menu:hover{
+          background-color: white;
+          color: #FF9FE2;
+        }
+        #wide{
+          width: 47.7vw;
+          margin: 1vw;
+        }
+        #tall{
+          width:90vw;
+          margin-left: 5vw;
+          margin-top: 1vw;
+          margin-bottom: 1vw;
+        }
+        .footer{
+          display: none;
+        }
+        #slogan{
+          position: fixed;
+          bottom: .25vw;
+          width: 100vw;
+          text-align: center;
+          color: white;
+          font-size:2vw;
+          font-weight: bolder;
+          z-index: 10;
+        }
+      }
+      @media screen and (min-width: 1101px){
+        .titleHeader{
+          position: relative;
+          top: 0vw;
+          width: 100vw;
+          height: 9vw;
+          background-color: #FF9FE2;
+          z-index: 10;
+        }
+        #donate{
+          position: relative;
+          width: 18vw;
+          margin-top: 1vw;
+          margin-left: 0vw;
+          z-index: 15;
+        }
+        #title{
+          position: absolute;
+          top: 0vw;
+          width: 100vw;
+          text-align: center;
+          color: white;
+          line-height: 1;
+          font-weight: bolder;
+          font-size:8vw;
+          z-index: 2;
+        }
+        .menu{
+          position:sticky;
+          top: -.25vw;
+          width: 100vw;
+          height: 4vw;
+          text-align: center;
+          background-color: #FF9FE2;
+          z-index: 10;
+        }
+        #menu{
+          position: sticky;
+          background-color: #FF9FE2;
+          color: white;
+          top: -.025vw;
+          font-size: 3vw;
+          font-weight: bold;
+          padding-left: 3vw;
+          padding-right: 3vw;
+          text-decoration: none;
+        }
+        #menu:hover{
+          background-color: white;
+          color: #FF9FE2;
+        }
+        #wide{
+          width: 30vw;
+          margin: 1.53vw;
+        }
+        #tall{
+          width:90vw;
+          margin-left: 5vw;
+          margin-top: 1vw;
+          margin-bottom: 1vw;
+        }
+        .footer{
+          position: fixed;
+          bottom: 0px;
+          width: 100vw;
+          background-color: #FF9FE2;
+          height: 3vw;
+          z-index: 5;
+        }
+        #slogan{
+          position: fixed;
+          bottom: .25vw;
+          width: 100vw;
+          text-align: center;
+          color: white;
+          font-size:2vw;
+          font-weight: bolder;
+          z-index: 10;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titleHeader">
+      <a href="https://www.gofundme.com/teamkatiefranklintn"><img src="paypalDonate.png" id="donate"></a>
+      <p id="title">Fighting for Katie</p>
+    </div>
+
+    <div class="menu">
+      <a href="https://www.fightingforkatie.com/" id="menu">HOME</a>
+      <a href="https://www.fightingforkatie.com/Game" id="menu" target="_blank">GAME</a>
+      <a href="https://www.fightingforkatie.com/Pictures" id="menu">PICTURES</a>
+    </div>
+
+    <img src="katie4.jpg" id="wide">
+    <img src="katie3.jpg" id="wide">
+    <img src="katie5.jpg" id="wide">
+    <img src="katie1.jpg" id="wide">
+    <img src="katie2.jpg" id="wide">
+    <img src="katie6.jpg" id="wide">
+    <img src="katie7.jpg" id="wide">
+    <img src="katie8.jpg" id="wide">
+    <img src="katie14.jpg" id="wide">
+    <img src="katie13.jpg" id="wide">
+    <img src="katie11.jpg" id="wide">
+    <img src="katie12.jpg" id="wide">
+    <img src="katie10.jpg" id="wide">
+    <img src="katie9.jpg" id="wide">
+    <img src="katie15.jpg" id="wide">
+    <img src="katie16.jpg" id="wide">
+    <img src="katie17.jpg" id="wide">
+    <img src="katie18.jpg" id="wide">
+
+
+    <div class="footer">
+      <p id="slogan">Katie Will Beat Cancer And You Can Help</p>
+    </div>
+  </body>
+</html>
